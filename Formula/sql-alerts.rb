@@ -9,11 +9,11 @@ class SqlAlerts < Formula
 
   def install
     ENV["CGO_ENABLED"] = "0"
-    system "go", "install", ".", *std_go_args
+    system "go", "build", *std_go_args(ldflags:, output: bin/"sqlal"), "./main.go"
   end
 
   test do
     # Add test code here if applicable
-    system "#{bin}/sql-alerts", "--version"
+    system "#{bin}/sqlal", "--version"
   end
 end
