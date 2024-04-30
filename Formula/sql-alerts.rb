@@ -3,7 +3,7 @@ class SqlAlerts < Formula
   homepage "https://github.com/yendefrr/sql-alerts"
   url "https://github.com/yendefrr/sql-alerts.git",
     tag: "v0.4.7",
-    revision: "0d33c5b7d48f8ed94d4b7c91d660c16562250716"
+    revision: "bbebbcc10c404062fe8407593fe3b5846d3b4a9e"
   sha256 "430e2c8a1a5da29c0f2543e5047ccc5e069214d43bdd9b2b8364af71be0f8aea"
 
   depends_on "go" => :build
