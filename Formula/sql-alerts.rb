@@ -2,8 +2,8 @@
 class SqlAlerts < Formula
   desc "Get notifications about new rows in your database"
   homepage "https://github.com/yendefrr/sql-alerts"
-  url "https://github.com/yendefrr/sql-alerts/archive/v0.4.3.tar.gz"
-  sha256 "a6aba0e169fb495ab8f1f8d01f85bbd8f20284ab9f1d1f3adc1e9db354f0acdf"
+  url "https://github.com/yendefrr/sql-alerts/archive/v0.4.7.tar.gz"
+  sha256 "d1a835fc4f1170d6f48da0b6d7ccbc4e0aa08973d05f488568c7b17a43e275a6"
 
   depends_on "go" => :build
 
