@@ -9,7 +9,7 @@ class SqlAlerts < Formula
 
   def install
     ENV["CGO_ENABLED"] = "0"
-    system "go", "build", *std_go_args(ldflags:, output: bin/"sqlal"), "./main.go"
+    system "go", "build", *std_go_args(output: bin/"sqlal"), "./main.go"
   end
 
   test do
