@@ -15,8 +15,7 @@ class SqlAlerts < Formula
       sha256 "dda9e0ee0ef250bea3bbf82a330364d93e472c9e2ff224dc9cb6dde114e8fb76"
 
       def install
-        ENV["CGO_ENABLED"] = "0"
-        system "go", "build", *std_go_args(output: bin/"sqlal"), "./cmd/sqlal"
+        bin.install "sql-alerts" => "sqlal"
       end
     end
     if Hardware::CPU.arm?
@@ -24,8 +23,7 @@ class SqlAlerts < Formula
       sha256 "1cd168aab1578fc0f9315f73f7fc01ef7654523a2cfee073da9c0a88fab1b2e5"
 
       def install
-        ENV["CGO_ENABLED"] = "0"
-        system "go", "build", *std_go_args(output: bin/"sqlal"), "./cmd/sqlal"
+        bin.install "sql-alerts" => "sqlal"
       end
     end
   end
@@ -36,8 +34,7 @@ class SqlAlerts < Formula
       sha256 "46b6cac4461f6999dc84f25bf03b3461b9c28ba879ff8e666112a6ffab3e054d"
 
       def install
-        ENV["CGO_ENABLED"] = "0"
-        system "go", "build", *std_go_args(output: bin/"sqlal"), "./cmd/sqlal"
+        bin.install "sql-alerts" => "sqlal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
@@ -45,8 +42,7 @@ class SqlAlerts < Formula
       sha256 "aa0df1af9de28e9a105a81107c0fc4870efb295a9dec976545d6e9df815e7f1b"
 
       def install
-        ENV["CGO_ENABLED"] = "0"
-        system "go", "build", *std_go_args(output: bin/"sqlal"), "./cmd/sqlal"
+        bin.install "sql-alerts" => "sqlal"
       end
     end
   end
