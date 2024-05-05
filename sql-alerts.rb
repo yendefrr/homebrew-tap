@@ -5,22 +5,22 @@
 class SqlAlerts < Formula
   desc "Get notifications about new rows in your database"
   homepage "https://github.com/yendefrr/sql-alerts"
-  version "1.8.0"
+  version "1.8.1"
 
   depends_on "go"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yendefrr/sql-alerts/releases/download/1.8.0/sql-alerts_Darwin_x86_64.tar.gz"
-      sha256 "bd57f2e7f857e6f03dcfa5859e78508433ee236f259830fff0531eddbc7be9f7"
+      url "https://github.com/yendefrr/sql-alerts/releases/download/1.8.1/sql-alerts_Darwin_x86_64.tar.gz"
+      sha256 "9b638a1d7ef04ed6f8095ffb742206710b35275e05db36c98a06d792c0429bf2"
 
       def install
         bin.install "sql-alerts" => "sqlal"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yendefrr/sql-alerts/releases/download/1.8.0/sql-alerts_Darwin_arm64.tar.gz"
-      sha256 "2f4194e91838822cbd400f9fa328ded3c3b0c461a1b23dc4f9455135950cff3e"
+      url "https://github.com/yendefrr/sql-alerts/releases/download/1.8.1/sql-alerts_Darwin_arm64.tar.gz"
+      sha256 "c1377c4a02e83e2baefd24091524830dd193b2255e0cc0b9034db22065b37715"
 
       def install
         bin.install "sql-alerts" => "sqlal"
@@ -30,16 +30,16 @@ class SqlAlerts < Formula
 
   on_linux do
     if Hardware::CPU.intel?
-      url "https://github.com/yendefrr/sql-alerts/releases/download/1.8.0/sql-alerts_Linux_x86_64.tar.gz"
-      sha256 "15e8e78fe59b6ae6ae5e12dd13a26bb5847d02a580792676c5dc934db90154e4"
+      url "https://github.com/yendefrr/sql-alerts/releases/download/1.8.1/sql-alerts_Linux_x86_64.tar.gz"
+      sha256 "d34c3272c70780af60f376111bfb89f0a9aead00fa06850e81309b7b9f096e8f"
 
       def install
         bin.install "sql-alerts" => "sqlal"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yendefrr/sql-alerts/releases/download/1.8.0/sql-alerts_Linux_arm64.tar.gz"
-      sha256 "5c5b6be988d11c70ed6df07560452345bbc8bfa51557307522fe44055423daff"
+      url "https://github.com/yendefrr/sql-alerts/releases/download/1.8.1/sql-alerts_Linux_arm64.tar.gz"
+      sha256 "7ee17032e96019a0a83940157e45aa95bd20b7331785b846456bc63fbe5cab18"
 
       def install
         bin.install "sql-alerts" => "sqlal"
